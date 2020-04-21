@@ -286,6 +286,11 @@ body {
 }
 
 /* 第2部分 */
+.content {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
 .part2 {
     width: 100%;
     height: 1076px;
@@ -308,20 +313,214 @@ body {
 
 /* 3、礼盒 */
 .part2-giftbox {
+    float: left;
     width: 580px;
     height: 706px;
     margin-top: 50px;
     margin-left: 26px;
     position: relative;
+    z-index: 1;
+}
+
+.part2-giftbox li {
+    width: 270px;
+    height: 346px;
+    background: url(../images/css_sprites.png)no-repeat;
+    background-position: -904px -446px;
+    text-align: center;
+}
+
+.part2-giftbox-li1 {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.part2-giftbox-li2 {
+    float: left;
+}
+
+.part2-giftbox-li3 {
+    float: right;
+}
+
+.part2-giftbox li em {
+    display: block;
+    padding-top: 46px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.part2-giftbox li img {
+    display: block;
+    width: 110px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.part2-giftbox li span {
+    display: block;
+    color: #000;
+    font-size: 16px;
+}
+
+.part2-giftbox li  {
+    display: block;
+    color: #000;
+    font-size: 16px;
+}
+
+.part2-giftbox-get {
+    display: block;
+    width: 166px;
+    height: 55px;
+    margin: auto;
+    margin-top: 30px;
+    background: url(../images/css_sprites.png) no-repeat;
+    background-position: -1013px -233px;
 }
 
 /* 4、npc-tab */
+.npc-tab {
+    position: relative;
+    float: right;
+    width: 594px;
+    height: 800px;
+    margin-top: 50px;
+    margin-right: 322px;
+}
+
+.npc-tab .name {
+    display: block;
+    position: absolute;
+    top: 46px;
+    right: 46px;
+    width: 38px;
+    height: 76px;
+    background: url(../images/css_sprites.png) no-repeat;
+}
+
+.npc-tab .name1 {
+    background-position: -961px -223px;
+}
+
+.npc-tab .name2 {
+    background-position: -915px -227px;
+}
+
+.part2-npc1-top {
+    width: 915px;
+    height: 369px;
+    background: url(../images/woman1.png) top no-repeat;
+}
+
+
 
 /* 第4部分 */
 .part4 {
     width: 100%;
     height: 1244px;
     background-image: url(../images/part4.webp);
+    margin-top: -40px;
+}
+
+.part4 .content {
+    padding-top: 120px;
+}
+
+/* 标题:每日任务 */
+.part4-spr {
+    display: block;
+    width: 139px;
+    height: 39px;
+    margin: auto;
+    background: url(../images/css_sprites.png) no-repeat;
+    background-position: -1040px -172px;
+}
+
+/* 说明 */
+.part4-tips {
+    width: 745px;
+    height: 26px;
+    background: url(../images/css_sprites.png)no-repeat;
+    background-position: -12px -740px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* 任务 */
+.part4-mission {
+    width: 995px;
+    height: 332px;
+    margin: auto;
+}
+
+.part4-mission li {
+    float: left;
+    width: 115px;
+    height: 270px;
+    background: url(../images/css_sprites.png) no-repeat;
+}
+
+.part4-mission .mrqd{
+    margin-left: 0px;
+    background-position: -3px -417px;
+}
+
+.part4-mission .dlyx{
+    margin-left: 61px;
+    background-position: -137px -417px;
+}
+
+.part4-mission .xhyc{
+    margin-left: 61px;
+    background-position: -271px -417px;
+}
+
+.part4-mission .njyc{
+    margin-left: 61px;
+    background-position: -405px -417px;
+}
+
+.part4-mission .jrlt{
+    margin-left: 61px;
+    background-position: -543px -417px;
+}
+
+.part4-mission .llgw{
+    margin-left: 61px;
+    background-position: -672px -417px;
+}
+
+.part4-mission li span {
+    display: block;
+    width: 24px;
+    height: 106px;
+    margin: auto;
+    padding-top: 110px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+}
+
+/* 马上领取 */
+.part4-mission-get {
+    display: block;
+    width: 113px;
+    height: 50px;
+    background: url(../images/css_sprites.png) no-repeat;
+    background-position: -913px -166px;
+    margin-top: 68px;
+}
+
+/* 抽奖 */
+.part4-lottery {
+    width: 808px;
+    height: 644px;
+    margin: auto;
 }
 
 /* 第5部分 */
@@ -329,6 +528,10 @@ body {
     width: 100%;
     height: 742px;
     background-image: url(../images/part5.webp);
+}
+
+.part5 .main-title {
+    background-position: -18px -330px;
 }
 
 /* 第6部分 */
