@@ -1,0 +1,2 @@
+$('#music').load();
+$('#music').play();

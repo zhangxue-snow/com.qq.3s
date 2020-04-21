@@ -1,0 +1,363 @@
+body {
+    position: relative;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 背景视频 */
+.kv {
+    position: relative;
+    width: 100%;
+    height: 1050px;
+    background: url(../images/kv2.webp) no-repeat;
+    background-position: bottom;
+}
+
+.kv-video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 音乐logo */
+.kv-musiclogo {
+    position: absolute;
+    top: 35px;
+    left: 1125px;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/spr.png);
+    background-position: 71px -220px;
+}
+
+/* 进入论坛 */
+.kv-enter-forum {
+    position: absolute;
+    top: 25px;
+    left: 1200px;
+    width: 160px;
+    height: 50px;
+    background-image: url(../images/e-spr.png);
+    background-position: 0px -60px;
+}
+
+/* 进入官网 */
+.kv-enter-offweb {
+    position: absolute;
+    top: 25px;
+    left: 1370px;
+    width: 160px;
+    height: 50px;
+    background-image: url(../images/e-spr.png);
+    background-position: 0px 0px;
+}
+
+/* 播放视频 */
+.kv-play {
+    display: block;
+    position: absolute;
+    top: 520px;
+    left: 1085px;
+    width: 69px;
+    height: 69px;
+}
+
+.kv-play span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/video.png);
+    animation: playRotate 15s linear infinite;
+}
+
+.kv-play i {
+    position: absolute;
+    top: 22px;
+    left: 28px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/playvideo.png);
+    background-repeat: no-repeat;
+}
+
+@keyframes playRotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 登录 */
+.kv-login {
+    position: absolute;
+    top: 610px;
+    width: 100%;
+    height: 20px;
+    color: #ff2e3f;
+    font-size: 18px;
+    text-align: center;
+}
+
+.kv-login a {
+    color: #3c9ee2;
+}
+
+/* 下载 */
+.kv-download {
+    position: absolute;
+    top: 630px;
+    left: 750px;
+    width: 426px;
+    height: 241px;
+    background-image: url(../images/codebg.png);
+}
+
+
+.kv-download-left {
+    float: left;
+}
+
+/* 二维码下载 */
+.kv-download-left-erweima {
+    width: 155px;
+    height: 155px;
+    padding: 32px 0 0 32px;
+}
+
+.kv-download-left p {
+    color: #de4550;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 5px 0 0 32px;
+}
+
+.kv-download-right {
+    float: right;
+    margin-top: 25px;
+    margin-right: 40px;
+}
+
+/* apple下载 */
+.kv-download-right-apple {
+    display: block;
+    margin-top: 5px;
+    box-sizing: border-box;
+    width: 176px;
+    height: 55px;
+    background-image: url(../images/css_sprites.png);
+    background-position: -4px -10px;
+}
+
+/* 安卓下载 */
+.kv-download-right-android {
+    display: block;
+    margin-top: 5px;
+    width: 176px;
+    height: 55px;
+    background-image: url(../images/css_sprites.png);
+    background-position: -186px -10px;
+}
+
+/* PC下载 */
+.kv-download-right-PC {
+    display: block;
+    margin-top: 5px;
+    width: 176px;
+    height: 55px;
+    background-image: url(../images/css_sprites.png);
+    background-position: -370px -10px;
+}
+
+/* 过渡 */
+.kv-guodu {
+    width: 100%;
+    height: 276px;
+    position: absolute;
+    top: 820px;
+    /* overflow: hidden; */
+}
+
+
+/* 二、主体 */
+
+/* 第1部分 */
+.part1 {
+    width: 100%;
+    height: 743px;
+    background: url(../images/part1.webp) no-repeat;
+}
+
+/* 1、标题 */
+.main-title {
+    display: block;
+    width: 728px;
+    height: 63px;
+    background: url(../images/css_sprites.png)no-repeat;
+    background-position: -18px -98px;
+    margin: auto;
+}
+
+/* 2、说明 */
+.part1-explain {
+    width: 426px;
+    height: 60px;
+    background: url(../images/part1_p.png) no-repeat;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* 3、奖励 */
+.part1-award {
+    position: relative;
+    width: 714px;
+    height: 262px;
+    margin: auto;
+    margin-top: 92px;
+}
+
+.part1-award li {
+    float: left;
+    position: absolute;
+    text-align: center;
+}
+
+/* images */
+.part1-award img {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+/* text */
+.part1-award span {
+    font-size: 16px;
+    color: #29184f;
+}
+
+.part1-award .li-1 {
+    width: 115px;
+    height: 136px;
+    top: 95px;
+    left: 40px;
+}
+
+.part1-award .li-2 {
+    width: 120px;
+    left: 302px;
+    top: 56px;
+}
+
+.part1-award .li-2 img {
+    width: 110px;
+    left: 305px;
+    top: 45px;
+    margin-bottom: 0px;
+}
+
+.part1-award .li-2 span {
+    margin-left: 5px;
+}
+
+.part1-award .li-3 {
+    width: 115px;
+    top: 98px;
+    right: 10px;
+}
+
+/* 4、领取 */
+.part1-lingqu {
+    display: block;
+    width: 215px;
+    height: 65px;
+    background: url(../images/css_sprites.png);
+    background-position: -552px -8px;
+    margin: auto;
+    margin-top: 84px;
+}
+
+/* 第2部分 */
+.part2 {
+    width: 100%;
+    height: 1076px;
+    background-image: url(../images/part2.webp);
+}
+
+/* 1、标题  */
+.part2 .main-title {
+    background-position: -18px -169px;
+}
+
+/* 2、说明 */
+.part2-explain {
+    width: 686px;
+    height: 61px;
+    background: url(../images/part2_p.png) no-repeat;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* 3、礼盒 */
+.part2-giftbox {
+    width: 580px;
+    height: 706px;
+    margin-top: 50px;
+    margin-left: 26px;
+    position: relative;
+}
+
+/* 4、npc-tab */
+
+/* 第4部分 */
+.part4 {
+    width: 100%;
+    height: 1244px;
+    background-image: url(../images/part4.webp);
+}
+
+/* 第5部分 */
+.part5 {
+    width: 100%;
+    height: 742px;
+    background-image: url(../images/part5.webp);
+}
+
+/* 第6部分 */
+.part6 {
+    width: 100%;
+    height: 462px;
+    background-image: url(../images/part6.webp);
+}
+
+/* 三、底部 */
+footer {
+    width: 100%;
+    height: 136px;
+    text-align: center;
+    background-color: #000;
+    overflow: hidden;
+    color: #999;
+    font-size: 14px;
+}
+
+footer p {
+    line-height: 1.7;
+}
+
+.footer-nav {
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.footer-nav a{
+    color: #999;
+}
