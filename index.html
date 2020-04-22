@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="./lib/jquery-3.4.1.min.js"></script>
     <script src="./js/index.js"></script>
-
 </head>
 
 <body>
@@ -20,9 +19,10 @@
             <video muted="" autoplay="" loop="" src="./video/3s.mp4"></video>
         </div>
         <!-- 音乐logo -->
-        <i class="kv-musiclogo">
-            <audio id="music" src="./audio/music.mp3" autoplay></audio>
-        </i>
+        <i class="kv-musiclogo"></i>
+        <iframe id="music" muted src="./audio/music.mp3" allow="autoplay"></iframe>
+        <!-- <embed src="./audio/music.mp3 " hidden="true" autostart="true" loop="-1"> -->
+
         <div class="kv-enter">
             <!-- 进入论坛 -->
             <a class="kv-enter-forum" href="javascript:"></a>
@@ -95,45 +95,58 @@
                 <h3 class="main-title"></h3>
                 <!-- 2、说明 -->
                 <p class="part2-explain"></p>
-                <!-- 3、礼盒 -->
-                <ul class="part2-giftbox fl">
-                    <li class="part2-giftbox-li1">
-                        <em>好感度达10</em>
-                        <img src="./images/award2.png" alt="">
-                        <span>优质变身宝箱*1</span>
-                        <!-- 马上领取 -->
-                        <a class="part2-giftbox-get" href=""></a>
-                    </li>
-                    <li class="part2-giftbox-li2">
-                        <em>好感度达20</em>
-                        <img src="./images/award2.png" alt="">
-                        <span>优质变身宝箱*2</span>
-                        <!-- 马上领取 -->
-                        <a class="part2-giftbox-get" href=""></a>
-                    </li>
-                    <li class="part2-giftbox-li3">
-                        <em>好感度达30</em>
-                        <img src="./images/award2.png" alt="">
-                        <span>优质变身宝箱*3</span>
-                        <!-- 马上领取 -->
-                        <a class="part2-giftbox-get" href=""></a>
-                    </li>
-                </ul>
-                <!-- 4、npc-tab
-                <ul class="npc-tab">
-                    <li>
-                        白浅
-                        <span class="name name1"></span>
-                        <div class="part2-npc1">
-                            <div class="part2-npc1-top"></div>
-                        </div>
-                    </li>
-                    <li>
-                        夜华
-                        <span class="name name2"></span>
-                        <div class="part2-npc2"></div>
-                    </li>
-                </ul> -->
+                <div class="part2-content">
+                    <!-- 3、礼盒 -->
+                    <ul class="part2-giftbox">
+                        <li class="part2-giftbox-li1">
+                            <em>好感度达10</em>
+                            <img src="./images/award2.png" alt="">
+                            <span>优质变身宝箱*1</span>
+                            <!-- 马上领取 -->
+                            <a class="part2-giftbox-get" href=""></a>
+                        </li>
+                        <li class="part2-giftbox-li2">
+                            <em>好感度达20</em>
+                            <img src="./images/award2.png" alt="">
+                            <span>优质变身宝箱*2</span>
+                            <!-- 马上领取 -->
+                            <a class="part2-giftbox-get" href=""></a>
+                        </li>
+                        <li class="part2-giftbox-li3">
+                            <em>好感度达30</em>
+                            <img src="./images/award2.png" alt="">
+                            <span>优质变身宝箱*3</span>
+                            <!-- 马上领取 -->
+                            <a class="part2-giftbox-get" href=""></a>
+                        </li>
+                    </ul>
+                    <!-- 4、npc-tab -->
+                    <ul class="npc-tab">
+                        <li class="item item1">
+                            <!-- 夜华 -->
+                            <span class="name name1"></span>
+                            <div class="part2-npc1">
+                                <div class="part2-npc1-top"></div>
+                                <div class="part2-npc1-bottom"></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <!-- 白浅 -->
+                            <span class="name name2"></span>
+                            <div class="part2-npc2">
+                                <div class="part2-npc2-top"></div>
+                                <div class="part2-npc2-bottom"></div>
+                            </div>
+                        </li>
+                        <!-- 与他邂逅 -->
+                        <a href="" class="npc-tab-encounter"></a>
+                    </ul>
+                    <!-- 5、npc切换按钮 -->
+                    <ul class="npc-control">
+                        <li class="lis">男</li>
+                        <li class="lis active">女</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -188,23 +201,78 @@
                         <a class="part4-mission-get" href="javascript:"></a>
                     </li>
                 </ul>
+                <!-- 4、抽奖 酿酒-->
                 <div class="part4-lottery">
                     <img src="./images/lottery.png" alt="">
+                    <p class="chance">
+                        <!-- "您有 片花瓣 （酿酒一次耗费1片花瓣）"
+                        ::after -->
+                    </p>
+                    <!-- 开始酿酒 -->
+                    <a href="javascript:" class="btn-lottery"></a>
+                    <a href="javascript:" id="history" class="history">【我的酿酒成果】</a>
                 </div>
             </div>
-            
+
         </div>
 
         <!-- 第5部分 -->
         <div class="part5">
             <div class="content">
                 <h3 class="main-title"></h3>
+                <!-- 轮播图 -->
+                <div class="feature-banner">
+                    <!-- 图片 -->
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="./images/lunbo4.png" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./images/lunbo5.png" alt="">
+                        </li>
+                    </ul>
+                    <!-- 左右切换按钮 -->
+                    <div class="arrow">
+                        <a class="prev" href="javascript:;"></a>
+                        <a class="next" href="javascript:;"></a>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- 第6部分 -->
         <div class="part6">
-
+            <div class="content">
+                <!-- 活动规则 -->
+                <h3 class="rule-title"></h3>
+                <ul class="rule">
+                    <li data-num="1.">
+                        <!-- ::before -->
+                        <i></i>
+                        不删档测试正式开启后，在游戏内创建角色并在本页面绑定的玩家 , 即可获得 "萌新礼包" 一份，一个游戏账号只可获得一次奖励。
+                    </li>
+                    <li data-num="2.">
+                        <!-- ::before -->
+                        <i></i>
+                        活动期间 , 玩家与本页面NPC好感度达到10、20、30时，即可获得对应 "邂逅礼包" 一份，每日只可邂逅1次，每个游戏账号只可获得一次奖励。
+                    </li>
+                    <li data-num="3.">
+                        <!-- ::before -->
+                        <i></i>
+                        活动期间，玩家每日在本页面完成任务，即可获得1次抽奖机会，每个游戏账号每天抽奖上限7次。
+                    </li>
+                    <li data-num="4.">
+                        <!-- ::before -->
+                        <i></i>
+                        活动奖励将通过游戏内邮件形式发放 , 届时请注意游戏内邮箱通知。
+                    </li>
+                    <li data-num="5.">
+                        <!-- ::before -->
+                        <i></i>
+                        如使用外挂、作弊器以及其他不正当的方式参加本活动的 , 三生三世手游将取消用户参与资格、获奖资格。
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
 

@@ -1,9 +1,15 @@
 body {
     position: relative;
 }
+
 * {
     padding: 0;
     margin: 0;
+}
+
+.content {
+    width: 1200px;
+    margin: auto;
 }
 
 /* 背景视频 */
@@ -286,17 +292,18 @@ body {
 }
 
 /* 第2部分 */
-.content {
-    width: 1200px;
-    height: 100%;
-    margin: auto;
-}
 .part2 {
     width: 100%;
     height: 1076px;
     background-image: url(../images/part2.webp);
 }
+.part2 .content {
+    padding-top: 40px;
+}
 
+.part2-content {
+    position: relative;
+}
 /* 1、标题  */
 .part2 .main-title {
     background-position: -18px -169px;
@@ -316,9 +323,9 @@ body {
     float: left;
     width: 580px;
     height: 706px;
-    margin-top: 50px;
-    margin-left: 26px;
-    position: relative;
+    position: absolute;
+    top: 50px;
+    left: 26px;
     z-index: 1;
 }
 
@@ -377,7 +384,7 @@ body {
     width: 166px;
     height: 55px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 28px;
     background: url(../images/css_sprites.png) no-repeat;
     background-position: -1013px -233px;
 }
@@ -387,9 +394,8 @@ body {
     position: relative;
     float: right;
     width: 594px;
-    height: 800px;
+    height: 741px;
     margin-top: 50px;
-    margin-right: 322px;
 }
 
 .npc-tab .name {
@@ -411,11 +417,91 @@ body {
 }
 
 .part2-npc1-top {
-    width: 915px;
-    height: 369px;
-    background: url(../images/woman1.png) top no-repeat;
+    position: absolute;
+    top: -60px;
+    right: -240px;
+    width: 924px;
+    height: 396px;
+    background: url(../images/man1.png) top no-repeat;
 }
 
+.part2-npc1-bottom {
+    position: absolute;
+    top: -60px;
+    right: -240px;
+    width: 924px;
+    height: 816px;
+    background: url(../images/man2.png) bottom no-repeat;
+    z-index: 0;
+}
+
+.part2-npc2-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 915px;
+    height: 360px;
+    background: url(../images/woman1.png) top no-repeat;
+    z-index: 0;
+}
+
+.part2-npc2-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 915px;
+    height: 381px;
+    background: url(../images/woman2.png) bottom no-repeat;
+    z-index: 0;
+}
+
+
+/* 与他邂逅 */
+.npc-tab-encounter {
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 30px;
+    /* top: 105px;
+    right: 455px; */
+    width: 110px;
+    height: 120px;
+    background: url(../images/css_sprites.png) no-repeat;
+    background-position: -1080px -307px;
+    outline: none;
+}
+
+/* 5、npc切换按钮 */
+.npc-control {
+    position: absolute;
+    right: 436px;
+    bottom: -800px;
+    width: 127px;
+    height: 64px;
+}
+
+.npc-control li {
+    float: left;
+    width: 47px;
+    height: 47px;
+    background: url(../images/css_sprites.png) no-repeat;
+    background-position: -795px -350px;
+    text-align: center;
+    line-height: 47px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.npc-control li.active {
+    float: left;
+    width: 80px;
+    height: 64px;
+    line-height: 64px;
+    background: url(../images/css_sprites.png) no-repeat;
+    background-position: -856px -342px;
+    margin-top: 0;
+}
 
 
 /* 第4部分 */
@@ -430,7 +516,7 @@ body {
     padding-top: 120px;
 }
 
-/* 标题:每日任务 */
+/* 1、标题:每日任务 */
 .part4-spr {
     display: block;
     width: 139px;
@@ -440,7 +526,7 @@ body {
     background-position: -1040px -172px;
 }
 
-/* 说明 */
+/* 2、说明 */
 .part4-tips {
     width: 745px;
     height: 26px;
@@ -450,7 +536,7 @@ body {
     margin-top: 10px;
 }
 
-/* 任务 */
+/* 3、任务 */
 .part4-mission {
     width: 995px;
     height: 332px;
@@ -521,6 +607,43 @@ body {
     width: 808px;
     height: 644px;
     margin: auto;
+    padding-top: 60px;
+    position: relative;
+}
+
+.part4-lottery .chance {
+    position: absolute;
+    left: 347px;
+    top: 350px;
+    width: 149px;
+    height: 45px;
+    background: url(../images/spr2.png) no-repeat;
+    background-position: -183px -196px;
+    z-index: 3;
+    margin-top: 60px;
+}
+
+.part4-lottery .btn-lottery {
+    display: block;
+    width: 110px;
+    height: 110px;
+    background: url(../images/btn-lottery.png) no-repeat;
+    position: absolute;
+    top: 480px;
+    left: 369px;
+}
+
+.part4-lottery .history {
+    position: absolute;
+    left: 368px;
+    bottom: 80px;
+    width: 113px;
+    height: 25px;
+    font-size: 14px;
+    color: #ef2537;
+    line-height: 25px;
+    cursor: pointer;
+    z-index: 10;
 }
 
 /* 第5部分 */
@@ -530,8 +653,49 @@ body {
     background-image: url(../images/part5.webp);
 }
 
+.part5 .content {
+    position: relative;
+    padding-top: 45px;
+}
+
 .part5 .main-title {
     background-position: -18px -330px;
+}
+
+/* 轮播图 */
+.feature-banner {
+    width: 1073px;
+    height: 480px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+/* 图片 */
+.feature-banner img {
+    width: 100%;
+}
+
+/* 左右切换按钮 */
+.prev,.next {
+    display: block;
+    width: 48px;
+    height: 80px;
+    position: absolute;
+    top: 360px;
+    cursor: pointer;
+    background: url(../images/css_sprites.png) no-repeat;
+}
+
+.prev {
+    left: 0;
+    background-position: -778px -239px;
+}
+
+.next {
+    right: 0;
+    background-position: -851px -239px;
 }
 
 /* 第6部分 */
@@ -539,6 +703,59 @@ body {
     width: 100%;
     height: 462px;
     background-image: url(../images/part6.webp);
+}
+
+.part6 .content {
+    padding-top: 60px;
+}
+
+.rule-title {
+    display: block;
+    width: 138px;
+    height: 34px;
+    background: url(../images/spr2.png) no-repeat;
+    background-position: -371px -196px;
+    margin: auto;
+}
+
+.rule {
+    width: 100%;
+    height: 248px;
+    background: url(../images/rulebg.png) no-repeat;
+    background-position: -11px -10px;
+    margin-top: 30px;
+    padding-left: 36px;
+    padding-top: 40px;
+}
+
+.rule li {
+    position: relative;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 16px;
+    color: #29184f;
+    line-height: 28px;
+}
+
+.rule li i {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 7px;
+    height: 8px;
+    background: url(../images/spr2.png) no-repeat;
+    background-position: -527px -196px;
+}
+
+.rule li::before {
+    content: attr(data-num);
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 35px;
+    height: 28px;
+    line-height: 28px;
 }
 
 /* 三、底部 */
