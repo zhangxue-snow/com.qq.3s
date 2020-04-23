@@ -20,7 +20,7 @@
         </div>
         <!-- 音乐logo -->
         <i class="kv-musiclogo"></i>
-        <iframe id="music" muted src="./audio/music.mp3" allow="autoplay"></iframe>
+        <iframe id="music" muted src="./audio/music.mp3" allow="autoplay" loop="-1" width="0" height="0"></iframe>
         <!-- <embed src="./audio/music.mp3 " hidden="true" autostart="true" loop="-1"> -->
 
         <div class="kv-enter">
@@ -36,7 +36,7 @@
         </a>
         <!-- 登录 -->
         <div class="kv-login">
-            <p>亲爱的仙友，请<a href="">【登录】</a></p>
+            <p>亲爱的仙友，请<a id="kv-loginbtn" href="">【登录】</a></p>
         </div>
         <!-- 下载 -->
         <div class="kv-download">
@@ -223,12 +223,18 @@
                 <!-- 轮播图 -->
                 <div class="feature-banner">
                     <!-- 图片 -->
-                    <ul class="swiper-wrapper">
-                        <li class="swiper-slide">
+                    <ul class="wrapper">
+                        <li class="slide">
                             <img src="./images/lunbo4.png" alt="">
                         </li>
-                        <li class="swiper-slide">
+                        <li class="slide">
                             <img src="./images/lunbo5.png" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="./images/lunbo5.png" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="./images/lunbo4.png" alt="">
                         </li>
                     </ul>
                     <!-- 左右切换按钮 -->
@@ -301,6 +307,29 @@
         <p>COPYRIGHT&nbsp;&copy;&nbsp;1998-2020&nbsp;TENCENT.ALL&nbsp;RIGHTS&nbsp;RESERVED.</p>
         <P>腾讯公司&nbsp;版权所有</P>
     </footer>
+
+    <!-- 登录弹窗 -->
+    <div class="login-window">
+        <div class="login-cont">
+            <h5 class="login-cont-title">请登录</h5>
+            <ul>
+                <li class="wx">
+                    <a href="">
+                        <img src="./images/wx.png" alt="">
+                        <span>微信登陆</span>
+                    </a>
+                </li>
+                <li class="qq">
+                    <a href="">
+                        <img src="./images/QQ.png" alt="">
+                        <span>QQ</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 关闭 -->
+        <a href="" class="login-close"></a>
+    </div>
 
 </body>
 

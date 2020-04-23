@@ -663,19 +663,61 @@ body {
 }
 
 /* 轮播图 */
-.feature-banner {
+.wrapper {
     width: 1073px;
     height: 480px;
     margin: 0 auto;
     margin-bottom: 60px;
     margin-top: 50px;
+    position: relative;
     overflow: hidden;
 }
 
 /* 图片 */
-.feature-banner img {
+.wrapper .slide{
+    position: absolute;
+}
+
+/* .wrapper .slide1{
+    position: absolute;
+    width: 790.64px;
+    height: 423.56px;
+    top: 30px;
+    left: -10px;
+    z-index: 2;
+}
+
+.wrapper .slide2{
+    position: absolute;
+    width: 895.93px;
+    height: 479.96px;
+    top: -2px;
+    left: 90px;
+    z-index: 3;
+}
+
+.wrapper .slide3{
+    position: absolute;
+    width: 790.64px;
+    height: 423.56px;
+    top: 30px;
+    right: -10px;
+    z-index: 2;
+}
+
+.wrapper .slide4{
+    position: absolute;
+    width: 707.33px;
+    height: 380.5px;
+    top: 30px;
+    right: -10px;
+    z-index: 1;
+} */
+
+.wrapper li img {
     width: 100%;
 }
+
 
 /* 左右切换按钮 */
 .prev,.next {
@@ -780,4 +822,99 @@ footer p {
 
 .footer-nav a{
     color: #999;
+}
+
+
+/* 登录弹窗 */
+/* .login-window {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #000;
+    height: 5431px;
+    z-index: 10;
+    width: 100%;
+    opacity: 0.5;
+    display: block;
+} */
+
+.login-window {
+    /* display: block; */
+    visibility: hidden;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -367.5px;
+    width: 735px;
+    height: 300px;
+    background: url(../images/loginpop.png) no-repeat;
+}
+
+.login-cont-title {
+    width: 446px;
+    height: 30px;
+    background: url(../images/spr2.png) no-repeat;
+    background-position: -720px -221px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    text-indent: -9999px;
+}
+
+/* .login-window .wx a {
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+.login-cont ul {
+    width: 364px;
+    height: 178px;
+    margin: auto;
+    margin-top: 22px;
+}
+
+.login-cont ul li {
+    float: left;
+    width: 141px;
+    height: 100%;
+    position: relative;
+}
+
+.login-cont ul .qq {
+    margin-left: 80px;
+}
+
+.login-cont li span {
+    display: block;
+    width: 48px;
+    height: 23px;
+    margin: auto;
+    background: url(../images/spr2.png) no-repeat;
+    margin-top: 13px;
+    text-indent: -9999px;
+}
+
+.login-cont .wx span {
+    background-position: -183px -256px;
+}
+
+.login-cont .qq span {
+    background-position: -238px -254px;
+}
+
+/* 关闭 */
+.login-close {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/spr2.png) no-repeat;
+    background-position: -292px -256px;
+    position: absolute;
+    right: 83px;
+    top: -18px;
 }
