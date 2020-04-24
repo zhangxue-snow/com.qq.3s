@@ -826,21 +826,8 @@ footer p {
 
 
 /* 登录弹窗 */
-/* .login-window {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    background-color: #000;
-    height: 5431px;
-    z-index: 10;
-    width: 100%;
-    opacity: 0.5;
-    display: block;
-} */
-
 .login-window {
-    /* display: block; */
-    visibility: hidden;
+    display: none;
     position: fixed;
     z-index: 9999;
     left: 50%;
@@ -917,4 +904,17 @@ footer p {
     position: absolute;
     right: 83px;
     top: -18px;
+}
+
+/* 背景变暗 */
+#overlar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 5431px;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 9998;
 }

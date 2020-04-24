@@ -8,28 +8,24 @@ $(function () {
     // 登录弹窗
     // 1、点击登录按钮显示
     $('#kv-loginbtn').on('click', function () {
-        $('.login-window').css('visibility', 'visible')
+        console.log('111');
+        $('.login-window').css('display', 'block')
+        $('#overlar').css('display', 'block')
     })
     // 2、点击关闭按钮隐藏
     $('.login-close').on('click', function () {
-        $('.login-window').css('visibility', 'hidden')
+        $('.login-window').css('display', 'none')
+        $('#overlar').css('display', 'none')
     })
 
     // $('#kv-loginbtn').mouseenter(function () {
-    //     $('.login-window').css('visibility', 'visible')
+    //     $('.login-window').css('display', 'block')
     // })
     // // 2、点击关闭按钮隐藏
     // $('#kv-loginbtn').mouseleave(function () {
-    //     $('.login-window').css('visibility', 'hidden')
+    //     $('.login-window').css('display', 'none')
     // })
 
-    // $('#kv-loginbtn').mouseenter(function () {
-    //     $('.login-window').show()
-    // })
-    // // 2、点击关闭按钮隐藏
-    // $('#kv-loginbtn').mouseleave(function () {
-    //     $('.login-window').hide()
-    // })
 
     // npc-tab切换
     $('.item1').hide()
