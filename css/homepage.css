@@ -11,6 +11,7 @@ body {
     width: 100%;
     height: 147px;
     position: absolute;
+    top: 100px;
     background: url(../images/nav-bg.png) repeat-x center top;
     z-index: 10;
 }
@@ -131,12 +132,12 @@ body {
     position: relative;
     height: 1416px;
     margin-top: -100px;
+    overflow: hidden;
     background: url(../images/bg-1.jpg) no-repeat center 0;
 }
 .kv-bg {
     display: block;
     height: 938px;
-    /* margin-top: 6px; */
     margin-top: 100px;
     min-width: 1600px;
     max-width: 1920px;
@@ -199,8 +200,8 @@ body {
 /* 三、仙履奇闻 */
 .xlqw {
     position: absolute;
-    top: 730px;
-    left: 0;
+    top: 824px;
+    left: 300px;
     right: 0;
     width: 1200px;
     height: 679px;
@@ -367,6 +368,11 @@ body {
     cursor: pointer;
 }
 
+.active.xlqw-bottom-tab-btn {
+    color: #fff;
+    background-position: -166px -298px;
+}
+
 .xlqw-bottom-box ul {
     float: right;
     width: 823px;
@@ -389,6 +395,10 @@ body {
     vertical-align: middle;
     line-height: 1.2;
     font-size: 16px;
+}
+
+.xlqw-bottom-box ul li>a:nth-child(2):hover {
+    text-decoration: underline;
 }
 
 .xlqw-time {
@@ -420,7 +430,198 @@ body {
     display: block;
     width: 497px;
     padding-top:88px;
-    margin: 100px auto 0;
+    margin: 150px auto 0;
     background: url(../images/sprite.png);
     background-position: 0 -528px;
+}
+
+.fairy-list {
+    width: 300px;
+    height: 45px;
+    margin: 30px auto 0;
+}
+
+.fairy-list li:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.fairy-btn-bg {
+    float: left;
+    width: 138px;
+    height: 45px;
+    line-height: 45px;
+    background: url(../images/fairy-btn-bg.png);
+    color: #4c6ea2;
+}
+
+.fairy-btn-bg a {
+    display: inline-block;
+    margin-top: 10px;
+    width: 110px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.active.fairy-btn-bg{
+    background: url(../images/taikoo-active-btn-bg.png);
+    color: #fff;
+}
+
+.fairy-list li span {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 10px;
+}
+
+.fairy-list li:first-of-type span {
+    width: 110px;
+    height: 28px;
+    background: url(../images/fairy-job-btn.png);
+    text-indent: -9999px;
+}
+
+.fairy-list li:first-of-type.active span {
+    background: url(../images/fairy-job-active-btn.png);
+}
+
+.fairy-list li:last-of-type span {
+    width: 112px;
+    height: 28px;
+    background: url(../images/fairy-friends-btn.png);
+}
+
+.fairy-list li:last-of-type.active span {
+    background: url(../images/fairy-friends-active-btn.png);
+}
+
+/* fairy-job */
+.fairy-job {
+    display: block;
+    position: relative;
+    width: 1400px;
+    height: 670px;
+    margin: 0 auto;
+    padding-top: 40px;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.job-tab {
+    position: absolute;
+    left: 150px;
+    width: 112px;
+    z-index: 3;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.fairy-tab-btn-bg {
+    width: 112px;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 38px;
+    text-align: center;
+    color: #618ed5;
+    background: url(../images/sprite.png) no-repeat;
+    background-position: -209px -111px;
+}
+
+.active.fairy-tab-btn-bg {
+    background-position: -208px -170px;
+    color: #fff;
+}
+
+
+/* 查看更多 */
+.look-more-btn {
+    position: absolute;
+    left: 150px;
+    bottom: 150px;
+    width: 112px;
+    padding-top: 48px;
+    background: url(../images/look-more-btn.png)no-repeat;
+}
+
+.job-wrap {
+    position: absolute;
+    right: 120px;
+    width: 752px;
+    height: 627px;
+    background: url(../images/fairy-img-bg.png) no-repeat 0 0/100% 100%;
+}
+
+.wrap-text {
+    position: absolute;
+    top: -20px;
+    left: -220px;
+    width: 211px;
+    height: 560px;
+    background: url(../images/fairy-wrap-text1.png)no-repeat;
+    text-indent: -9999px;
+    animation: textTop 1s linear;
+}
+
+@keyframes textTop {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-200px,0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fairy-video-bg {
+    display: block;
+    position: absolute;
+    top: 495px;
+    left: -312px;
+    width: 145px;
+    height: 145px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.fairy-video-bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    transform: scale(0.8);
+    animation: rightIn 1s;
+}
+
+.fairy-video-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 39px;
+    height: 45px;
+    margin: -22.5px 0 0 -20px;
+    background: url(../images/sprite.png) no-repeat;
+    background-position: -423px 0;
+    z-index: 1;
+}
+
+.fairy-npc-img {
+    position: absolute;
+    top: -78px;
+    right: -150px;
+    width: 949px;
+    height: 778px;
+    transform: scale(.8);
+    animation: rightIn 1s;
+}
+
+@keyframes rightIn {
+    0% {
+        opacity: 0;
+        transform: translate3d(200px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate3d(0, 0, 0);
+    }
 }

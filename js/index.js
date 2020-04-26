@@ -98,3 +98,24 @@ $(function () {
         assign();
     })
 })
+
+
+
+
+
+// 入口函数
+$(function () {
+    // fairy tab切换
+
+    // 1、给li添加点击事件
+    // $('.xlqw-box-list').hide();
+    $('.xlqw-bottom-tab-btn').on('click', function () {
+        // 1.1 让所有list隐藏
+        $('.xlqw-box-list').hide();
+        // 1.2 让点击的这个li的索引对应的list显示
+        let index = $(this).index();
+        $('.xlqw-box-list').eq(index).show();
+        // 切换css样式
+        $('.xlqw-bottom-tab-btn').eq(index).addClass('active')
+    })
+})
