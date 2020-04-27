@@ -1,0 +1,38 @@
+@keyframes playRotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes erweima-line {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(185px);
+    }
+}
+
+@keyframes textTop {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-200px,0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rightIn {
+    0% {
+        opacity: 0;
+        transform: translate3d(200px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate3d(0, 0, 0);
+    }
+}

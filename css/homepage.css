@@ -187,14 +187,6 @@ body {
     background-repeat: no-repeat;
 }
 
-@keyframes playRotate {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 
 /* 三、仙履奇闻 */
@@ -247,15 +239,6 @@ body {
     height: 15px;
     animation: erweima-line 2s linear infinite alternate;
     z-index: 1;
-}
-
-@keyframes erweima-line {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(185px);
-    }
 }
 
 .xlqw-list {
@@ -561,16 +544,6 @@ body {
     animation: textTop 1s linear;
 }
 
-@keyframes textTop {
-    0% {
-        opacity: 0;
-        transform: translate3d(0,-200px,0);
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .fairy-video-bg {
     display: block;
     position: absolute;
@@ -613,15 +586,4 @@ body {
     height: 778px;
     transform: scale(.8);
     animation: rightIn 1s;
-}
-
-@keyframes rightIn {
-    0% {
-        opacity: 0;
-        transform: translate3d(200px, 0, 0);
-    }
-    100% {
-        opacity: 1;
-        transform: rotate3d(0, 0, 0);
-    }
 }

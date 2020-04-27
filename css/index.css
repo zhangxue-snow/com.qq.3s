@@ -92,15 +92,6 @@ body {
     background-repeat: no-repeat;
 }
 
-@keyframes playRotate {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 /* 登录 */
 .kv-login {
     position: absolute;
