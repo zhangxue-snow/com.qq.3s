@@ -172,6 +172,7 @@
     padding-top: 190px;
 }
 
+/* 左边导航 */
 .left-nav {
     display: block;
     position: absolute;
@@ -211,7 +212,7 @@
     margin-left: -84px;
     width: 168px;
     height: 7px;
-    background: url(../images/inpage-icon.png) no-repeat -10px-210px;
+    background: url(../images/inpage-icon.png) no-repeat -10px -210px;
 }
 
 .left-nav li a:hover:after {
@@ -219,6 +220,7 @@
 }
 
 .left-nav li i {
+    width: 82px;
     display: inline-block;
     height: 20px;
     text-indent: -9999px;
@@ -275,7 +277,7 @@
     right: -3px;
     width: 165px;
     height: 9px;
-    animation: erweima-line 2s linear infinite alternate;
+    animation: leftqrline 2s linear infinite alternate;
 }
 
 .left-qr p {
@@ -288,16 +290,216 @@
 
 /* 进入论坛 */
 .leftnav-forum {
+    display: block;
     width: 168px;
-    padding-top: 55px;
-    background: url(../images/left-nav-enter.png);
-    margin: 3px 0 2px 6px;
+    height: 55px;
+    background: url(../images/left-nav-enter.png) no-repeat;
+    margin: 40px 0 2px 6px;
+    text-indent: -9999px;
 }
 
 /* 立即下载 */
 .leftnav-download {
+    display: block;
     width: 168px;
-    padding-top: 55px;
-    background: url(../images/left-nav-download1.png);
+    height: 55px;
+    background: url(../images/left-nav-download1.png) no-repeat;
     margin-left: 6px;
+    text-indent: -9999px;
+}
+
+
+/* 右边内容 */
+.right-content {
+    float: right;
+    width: 980px;
+    margin-left: 215px;
+    min-height: 900px;
+    background-color: #fff;
+    padding: 0 0 10px 0;
+}
+
+.content-title {
+    width: 100%;
+    height: 120px;
+    line-height: 35px;
+    padding: 42px 35px;
+    background: url(../images/inpage-title.webp) no-repeat;
+    box-sizing: border-box;
+}
+
+.content-title h2 {
+    display: inline-block;
+    width: 147px;
+    height: 35px;
+    background: url(../images/inpage-icon.png) no-repeat -10px -60px;
+    text-indent: -9999px;
+}
+
+.content-title span {
+    float: right;
+    color: #fff;
+    font-size: 14px;
+}
+
+.content-title span a {
+    color: #fff;
+}
+
+/* 内容  */
+.tab-wrap {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 20px 30px 20px;
+}
+/* 列表导航 */
+.tab-nav {
+    overflow: hidden;
+    border-bottom: 1px solid #d6dce0;
+    padding-bottom: 8px;
+}
+
+.tab-nav-list li {
+    position: relative;
+    float: left;
+    width: 110px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 165px;
+}
+
+.tab-nav-list li:last-child {
+    margin-right: 0;
+}
+
+.tab-nav-list .on:before {
+    content: '';
+    display: block;
+    width: 110px;
+    height: 9px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    background: url(../images/inpage-icon.png) no-repeat -10px -180px;
+}
+
+.tab-nav-list .on>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #037dca;
+}
+
+/* 列表项 */
+.tab-list>ul {
+    display: block;
+    width: 100%;
+    height:600px;
+    overflow: hidden;
+    /* box-sizing: border-box; */
+}
+
+.tab-list li {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    border-bottom: 1px dashed #d6dce0;
+}
+.tab-list li a {
+    color: #000;
+}
+
+.tab-list li a.text:hover {
+    text-decoration: underline;
+  }
+
+.tab-list li>a.notice {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tab-list .time {
+    float: right;
+    margin-right: 8px;
+}
+
+/* 分页按钮 */
+/* .tab-paging {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 34px;
+    background-color: #fff;
+}
+
+.laypage-main {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.laypage-main a {
+    display: block;
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 0 1px 6px;
+    padding: 0 10px;
+    width: 85px;
+    height: 26px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.laypage-curr {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 700;
+    color: red;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 28px;
+    height: 28px;
+    border: 0;
+    margin-right: 10px;
+    color: red;
+} */
+
+.tab-paging {
+    width: 940px;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 30px;
+    text-align: center;
+    /* background-color: paleturquoise; */
+}
+
+.laypage-main a {
+    display: inline-block;
+    width: 85px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    clear: both;
+    padding: 0 10px;
+    margin: 0 2px;
+}
+
+.tab-paging .paging-active {
+    /* display: inline-block; */
+    width: 28px;
+    line-height: 28px;
+    border: 0;
+    padding: 0;
+    font-weight: 700;
 }
