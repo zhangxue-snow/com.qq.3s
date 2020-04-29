@@ -86,11 +86,11 @@ body {
     background: url(../images/icon.png) no-repeat -373px -35px;
 }
 
-.list-item7 a {
-    background: url(../images/sprite.png) no-repeat 0px -80px;
+.list-item6 a {
+    background: url(../images/icon.png) no-repeat -191px -10px;
 }
-.list-item7 a:hover {
-    background: url(../images/nav-active-cdk.png) no-repeat;
+.list-item6 a:hover {
+    background: url(../images/icon.png) no-repeat -191px -35px;
 }
 
 .nav-list li:after {
@@ -102,7 +102,7 @@ body {
     margin: 0 20px;
 }
 
-.nav-list .list-item7:after {
+.nav-list .list-item6:after {
     content:''; 
 }
 
@@ -539,9 +539,28 @@ body {
     left: -220px;
     width: 211px;
     height: 560px;
-    background: url(../images/fairy-wrap-text1.png)no-repeat;
     text-indent: -9999px;
     animation: textTop 1s linear;
+}
+
+.wrap-slide .text1 {
+    background: url(../images/fairy-wrap-text1.png) no-repeat;
+}
+
+.wrap-slide .text2 {
+    background: url(../images/fairy-wrap-text2.png) no-repeat;
+}
+
+.wrap-slide .text3 {
+    background: url(../images/fairy-wrap-text3.png) no-repeat;
+}
+
+.wrap-slide .text4 {
+    background: url(../images/fairy-wrap-text4.png) no-repeat;
+}
+
+.wrap-slide .text5 {
+    background: url(../images/fairy-wrap-text5.png) no-repeat;
 }
 
 .fairy-video-bg {

@@ -13,7 +13,9 @@ $(function () {
         // 1.3 切换样式
         $('.xlqw-bottom-tab-btn').eq(index).addClass('active').siblings().removeClass("active")
     })
+})
 
+$(function () {
     // 职业介绍
     $('.wrap-slide').hide();
     $('.wrap-slide1').show();

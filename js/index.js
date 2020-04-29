@@ -1,30 +1,52 @@
 // 入口函数
 $(function () {
     // 背景音乐
-    $('.kv-video').click(function () {
+    // function toggleSound() {
+    //     var music = document.getElementById("music");//获取ID  
+    //     console.log(music);
+    //     console.log(music.paused);
+    //     if (music.paused) { //判读是否播放  
+    //         music.paused = false;
+    //         music.play(); //没有就播放 
+    //     }
+    // }
+    // setInterval("toggleSound()", 1);
 
+
+    $("#music").bind("click",function () {
+        let  uploadMusic = $("#uploadMusic")[0]; /*jquery对象转换成js对象*/
+        if (uploadMusic.paused){
+            /*如果已经暂停*/
+            uploadMusic.play();/*播放*/
+        }else {
+            uploadMusic.pause();/*暂停*/
+        }
     })
+
+
 
     // 登录弹窗
     // 1、点击登录按钮显示
     $('#kv-loginbtn').on('click', function () {
-        console.log('111');
         $('.login-window').css('display', 'block')
-        $('#overlar').css('display', 'block')
+        // 1、点击微信登录显示二维码弹窗
+        $('#kv-loginbtn').on('click', function () {
+            $('.login-window').css('display', 'block')
+
+
+        })
+        // 2、点击qq显示二维码弹窗
+        $('.login-close').on('click', function () {
+            $('.login-window').css('display', 'none')
+            // $('#overlar').css('display', 'none')
+        })
+
     })
     // 2、点击关闭按钮隐藏
     $('.login-close').on('click', function () {
         $('.login-window').css('display', 'none')
-        $('#overlar').css('display', 'none')
+        // $('#overlar').css('display', 'none')
     })
-
-    // $('#kv-loginbtn').mouseenter(function () {
-    //     $('.login-window').css('display', 'block')
-    // })
-    // // 2、点击关闭按钮隐藏
-    // $('#kv-loginbtn').mouseleave(function () {
-    //     $('.login-window').css('display', 'none')
-    // })
 
 
     // npc-tab切换
@@ -100,22 +122,3 @@ $(function () {
 })
 
 
-
-
-
-// 入口函数
-$(function () {
-    // fairy tab切换
-
-    // 1、给li添加点击事件
-    // $('.xlqw-box-list').hide();
-    $('.xlqw-bottom-tab-btn').on('click', function () {
-        // 1.1 让所有list隐藏
-        $('.xlqw-box-list').hide();
-        // 1.2 让点击的这个li的索引对应的list显示
-        let index = $(this).index();
-        $('.xlqw-box-list').eq(index).show();
-        // 切换css样式
-        $('.xlqw-bottom-tab-btn').eq(index).addClass('active')
-    })
-})

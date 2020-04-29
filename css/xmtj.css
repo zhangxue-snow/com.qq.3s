@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+/* 顶部导航 */
+.nav {
+    width: 100%;
+    height: 147px;
+    position: absolute;
+    /* top: 100px; */
+    background: url(../images/nav-bg.png) repeat-x center top;
+    z-index: 10;
+}
+
+.nav-wrap {
+    width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.item1 {
+    float: left;
+}
+
+.nav-logo {
+    display: inline-block;
+    width: 241px;
+    height: 0;
+    padding-top: 147px;
+    background: url(../images/logo-top.png) no-repeat;
+    overflow: hidden;
+}
+
+.nav-list {
+    margin-left: 20px;
+    margin-top: 23px;
+}
+
+.nav-list li {
+    line-height: 20px;
+    float: left;
+}
+
+.nav-list li>a {
+    display: inline-block;
+    width: 81px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.list-item1 a {
+    background: url(../images/icon.png) no-repeat -10px -10px;
+}
+.list-item1 a:hover {
+    background: url(../images/icon.png) no-repeat -10px -35px;
+}
+.list-item2 a {
+    background: url(../images/icon.png) no-repeat -100px -10px;
+}
+.list-item2 a:hover {
+    background: url(../images/icon.png) no-repeat -100px -35px;
+}
+.list-item3 a {
+    background: url(../images/nav-xmtj.png) no-repeat;
+}
+.list-item3 a:hover {
+    background: url(../images/nav-active-xmtj.png) no-repeat;
+}
+
+.list-item4 a {
+    background: url(../images/sprite.png) no-repeat 0px -145px;
+}
+.list-item4 a:hover {
+    background: url(../images/nav-active-xiuxian.png) no-repeat;
+}
+
+.list-item5 a {
+    background: url(../images/nav-taikoo.png) no-repeat;
+}
+.list-item5 a:hover {
+    background: url(../images/icon.png) no-repeat -373px -35px;
+}
+
+.list-item6 a {
+    background: url(../images/icon.png) no-repeat -191px -10px;
+}
+.list-item6 a:hover {
+    background: url(../images/icon.png) no-repeat -191px -35px;
+}
+
+.nav-list li:after {
+    content:'/';
+    color: #9bc0de;
+    font-size: 20px;
+    text-indent: 0;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+.nav-list .list-item6:after {
+    content:''; 
+}
+
+/* 进入论坛 */
+.nav-forum {
+    display: inline-block;
+    overflow: hidden;
+    width: 168px;
+    padding-top: 55px;
+    background: url(../images/icon.png) no-repeat -10px -60px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.nav-appoint {
+    display: inline-block;
+    overflow: hidden;
+    width: 168px;
+    padding-top: 55px;
+    background: url(../images/left-nav-download.png);
+    margin: -10px -100px 0 10px;
+}
+
+
+
+
+
+/* 主体 */
+.content-fairy {
+    position: relative;
+    width: 100%;
+    height: 1227px;
+    padding-top: 130px;
+    margin: 0 auto;
+    background: url(../images/fairy-more.webp) no-repeat;
+}
+
+
+/* 底部 */
+
+footer {
+    width: 100%;
+    height: 175px;
+    background-color: #000;
+    background-repeat: repeat-x;
+}
+
+footer .foot {
+    position: relative;
+    padding-top: 20px;
+    width: 1200px;
+    height: 175px;
+    background-color: red;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.foot-cpright {
+    width: 1200px;
+    height: 155px;
+    background-color: green;
+}
+
+.foot-left {
+    float: left;
+    /* display: inline; */
+}
+
+.foot-left .foot-ieg-logo {
+    float: left;
+    width: 180px;
+    height: 35px;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 10px 0 0 10px;
+    background: url(../images/foot-dark.png);
+}
