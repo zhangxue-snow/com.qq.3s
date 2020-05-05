@@ -174,6 +174,139 @@ body {
     background-position: -208px -170px;
 }
 
+.job-wrap {
+    position: absolute;
+    left: 322px;
+    width: 752px;
+    height: 782px;
+    background: url(../images/fairymore-img-bg.png) no-repeat 0 0/100% 100%;
+}
+
+.wrap-slide>img {
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 909px;
+    height: 748px;
+    animation: leftIn 1s;
+}
+
+/* 播放背景图片 */
+.fairy-video-bg {
+    display: block;
+    position: absolute;
+    top: 495px;
+    left: -312px;
+    width: 145px;
+    height: 145px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.fairy-video-bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+}
+
+.fairy-video-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 39px;
+    height: 45px;
+    margin: -22.5px 0 0 -20px;
+    background: url(../images/sprite.png) no-repeat;
+    background-position: -423px 0;
+    z-index: 1;
+}
+
+/* 文本描述 */
+.wrap-text {
+    position: absolute;
+    top: -20px;
+    left: -220px;
+    width: 211px;
+    height: 560px;
+    text-indent: -9999px;
+    animation: textTop 1s linear;
+}
+
+.wrap-slide .text1 {
+    background: url(../images/fairy-wrap-text1.png) no-repeat;
+}
+
+.wrap-slide .text2 {
+    background: url(../images/fairy-wrap-text2.png) no-repeat;
+}
+
+.wrap-slide .text3 {
+    background: url(../images/fairy-wrap-text3.png) no-repeat;
+}
+
+.wrap-slide .text4 {
+    background: url(../images/fairy-wrap-text4.png) no-repeat;
+}
+
+.wrap-slide .text5 {
+    background: url(../images/fairy-wrap-text5.png) no-repeat;
+}
+
+/* 武器 */
+.wrap-wq {
+    position: absolute;
+    width: 300px;
+    height: 105px;
+    top: 640px;
+    left: -230px;
+    font-size: 26px;
+    color: #5485ac;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* 操作难度 */
+.wrap-wq i {
+    display: inline-block;
+    width: 170px;
+    height: 25px;
+    background: url(../images/sprite.png) no-repeat;
+}
+
+/* 三颗半星 */
+.wrap-wq .difficulty3-5 {
+    background-position: -544px -637px;
+}
+
+
+/* 技能 */
+.skill-pox {
+    position: absolute;
+    top: 605px;
+    height: 110px;
+    width: 300px;
+    height: 110px;
+    z-index: 2;
+    padding-left: 10px;
+}
+
+.skill-box {
+    position: static;
+    height: 110px;
+    padding-right: 10px;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 110px;
+}
+
+
+
+/* 二维码导航 */
 .content-fairy .qr-page {
     position: absolute;
     bottom: 20px;

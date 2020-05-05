@@ -30,31 +30,31 @@ $(function () {
 
             // 让点击的这个li的索引对应的ul显示
             let index = $(this).index();
-            if (index >1) {
-                $('.laypage-prev').show()
+            // if (index >1) {
+            //     $('.laypage-prev').show()
 
-            }
-            else {
-                $('.laypage-prev').hide()
-            }
-            if (index < 3) {
-                $('.laypage-next').show()
-            }
-            else {
-                $('.laypage-next').hide()
-            }
-            $('.laypage-prev').on('click', function () {
-                // index--;
-                $('.tab-paging a').eq(index-1).addClass('paging-active').siblings().removeClass("paging-active")
-            })
-            $('.laypage-next').on('click', function () {
-                // index++;
-                $('.tab-paging a').eq(index+1).addClass('paging-active').siblings().removeClass("paging-active")
-            })
+            // }
+            // else {
+            //     $('.laypage-prev').hide()
+            // }
+            // if (index < 3) {
+            //     $('.laypage-next').show()
+            // }
+            // else {
+            //     $('.laypage-next').hide()
+            // }
+            // $('.laypage-prev').on('click', function () {
+            //     // index--;
+            //     $('.tab-paging a').eq(index).addClass('paging-active').siblings().removeClass("paging-active")
+            // })
+            // $('.laypage-next').on('click', function () {
+            //     // index++;
+            //     $('.tab-paging a').eq(index).addClass('paging-active').siblings().removeClass("paging-active")
+            // })
 
 
-            console.log(index);
-            $('.tab-list-ul').eq(index - 1).show();
+            // console.log(index);
+            $('.tab-list-ul').eq(index).show();
             // 1.3 切换样式
             $('.tab-paging a').eq(index).addClass('paging-active').siblings().removeClass("paging-active")
 
